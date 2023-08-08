@@ -18,7 +18,7 @@ console.log(city);
 
 const ownerName = 'Hari Ram';
 // ownerName = 'Madhu'; Cannot do this
-console.log(ownerName);
+//console.log(ownerName);
 const fruit = 'Orange';
 // console.log(fruit);
 
@@ -30,7 +30,7 @@ const fruit = 'Orange';
 console.log(city);
 
 const arr1 = [12,33,12,53,3];
-// arr1 = [34,23,23]
+//arr1 = [34,23,23]
 arr1.push(45);
 console.log(arr1);
 
