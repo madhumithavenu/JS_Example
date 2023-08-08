@@ -27,16 +27,16 @@ console.log(value);
 // marks.shift(); //Delete the first element
 // marks.splice(1,3); Delete the value from 1 to 3 given index
 // marks.reverse();
-// let marks2 = [1, 2, 3, 7];
-// marks = marks.concat(marks2); //Add marks1 and marks2
-// // console.log(marks); 
+let marks2 = [1, 2, 3, 7];
+marks = marks.concat(marks2); //Add marks1 and marks2
+// console.log(marks); 
 
-// let myObj = {
+let myObj = {
 
-//     'first name': 'harry',
-//     channel: 'CodeWithHarry',
-//     isActive: true,
-//     marks: [1, 5, 3, 6]
-// }
-// console.log(myObj);
-// console.log(myObj['first name']); //harry
+    'first name': 'harry',
+    channel: 'CodeWithHarry',
+    isActive: true,
+    marks: [1, 5, 3, 6]
+}
+console.log(myObj);
+console.log(myObj['first name']); //harry
