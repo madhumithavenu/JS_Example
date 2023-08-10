@@ -9,4 +9,6 @@ a = innerWidth;
 a = scrollX;
 a = scrollY;
 
+a = location.toString();
+a = window.history;
 console.log(a);
