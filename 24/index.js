@@ -28,6 +28,9 @@ console.log(otherDate);
 const start = Date.now(); //static method returns the number of milli second elapsed sence the begining of jan 1, 1970.
 console.log(start); //1692162121585
 
+/*
+Date.parse (): static method parses a string representation of date and returns the date time stamp
+*/
 //Date.parse(): 
 const unix = Date.parse('01 Jan 1970 00:00:00 GMT'); //0
 const unixRelease = Date.parse('04 Dec 1995 00:12:00 GMT'); //818035920000
@@ -35,9 +38,6 @@ const unixRelease = Date.parse('04 Dec 1995 00:12:00 GMT'); //818035920000
 console.log(unix);
 console.log(unixRelease);
 
-/*
-Date.parse (): static method parses a string representation of date and returns the date time stamp
-*/
 
 //toLocaleDateString(): returns the string with language sensitive representation of the date portion of specified date.
 
