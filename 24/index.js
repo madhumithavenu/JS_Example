@@ -34,3 +34,27 @@ const unixRelease = Date.parse('04 Dec 1995 00:12:00 GMT'); //818035920000
 
 console.log(unix);
 console.log(unixRelease);
+
+/*
+Date.parse (): static method parses a string representation of date and returns the date time stamp
+*/
+
+//toLocaleDateString(): returns the string with language sensitive representation of the date portion of specified date.
+
+const event = new Date(Date.UTC(2023, 7, 16, 3, 0, 0));
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+console.log(event.toLocaleDateString('de-DE', options));
+console.log(event.toLocaleDateString('ar-EG', options)); //الأربعاء، ١٦ أغسطس ٢٠٢٣
+console.log(event.toLocaleDateString(undefined, options));
+console.log(event.toLocaleDateString(undefined)); //8/16/2023
+console.log(event.toLocaleDateString()); //8/16/2023
+console.log(event.toLocaleString(undefined, {timeZone: 'UTC'})); //8/16/2023, 3:00:00 AM
+console.log(event.toLocaleString('en-GB', {timeZone: 'UTC'})); //16/08/2023, 03:00:00
+console.log(event.toLocaleString('ko-KR', {timeZone: 'UTC'})); //2023. 8. 16. 오전 3:00:00
+
+//toString(): returns the string representing the date
+const e = new Date('August 19, 1975 23:15:30');
+console.log(e.toString());
+
+//Returns the number of milli second for this date sence begining of jan 1 1970, UTC.
+console.log(event.valueOf());
