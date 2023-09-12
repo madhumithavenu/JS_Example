@@ -18,6 +18,8 @@ function func1(){
         },2000);
     })
 }
+
+
 func1().then(function(){
     console.log("Harry: Thanks for resolving");
 }).catch(function(error){
