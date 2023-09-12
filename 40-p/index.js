@@ -1,6 +1,6 @@
 // bd002a1cf4f64969a8819fcbfe3a190f
 
-source = 'bbc-news';
+source = 'The-Times-of-India';
 let apiKey = 'bd002a1cf4f64969a8819fcbfe3a190f'
 
 let newsAccordion = document.getElementById('newsAccordion');
