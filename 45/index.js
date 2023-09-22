@@ -27,3 +27,11 @@ let result2 = reg.test(s);
 // 3. match() - It will return an array of results or null.
 let result3 = s.match(reg) //--> This is right
 console.log(result3);
+
+// 4. search() - Returns index of first match else -1.
+let result4 = s.search(reg) 
+console.log(result4);
+
+// 5. replace() - Returns new replace string with all the replacements. (If no flag is given, first match will be replaced)
+let result5 = s.replace(reg, "SHUBHAM");
+console.log(result5);
