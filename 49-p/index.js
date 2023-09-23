@@ -5,6 +5,8 @@ const phone = document.getElementById('phone');
 let validEmail = false;
 let validPhone = false;
 let validUser = false;
+$('#failure').hide();
+$('#success').hide();
 
 // console.log(name, email, phone);
 name.addEventListener('blur', () => {
