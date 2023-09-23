@@ -13,3 +13,22 @@ regex = /\s+ka number/;  //['    ka number', index: 28, input: 'harh7rd1r4r5r %%
 regex = /\Ska number/;  //['ika number', index: 28, input: 'harh7rd1r4r5r %%$@bhai harryika number 899999harry9999', groups: undefined]  //--> match non-white space
 regex = /\S+ka number/;  //['harryika number', index: 23, input: 'harh7rd1r4r5r %%$@bhai harryika number 899999harry9999', groups: undefined]  //--> match one or more than one non-white space
 regex = /4r5r\b/;  //['4r5r', index: 9, input: 'harh7rd1r4r5r %%$@bhai harryika number 899999harry9999', groups: undefined] //--> boundry
+
+//Assertions
+regex = /h(?=y)/;  //e result from exec is  ['h', index: 23, input: 'harh7rd1r4r5ry%%$@bhai hyrryika number 899999harry9999', groups: undefined]
+regex = /h(?!y)/;  //e result from exec is  ['h', index: 0, input: 'harh7rd1r4r5ry%%$@bhai hdrryika number 899999harry9999', groups: undefined]
+
+// str = "harhard1r4r5r bhai";
+// str = "harh%7rd1r4r5r bhai";
+// str = "harh7rd1r4r5r %%$@bhai";
+str = "harh7rd1r4r5ry%%$@bhai hdrryika number 899999harry9999";
+
+let result = regex.exec(str);
+console.log("The result from exec is ", result);
+
+
+if (regex.test(str)) {
+    console.log(`The string ${str} matches the expression ${regex.source}`);
+} else {
+    console.log(`The string ${str} does not matches the expression ${regex.source}`);
+}
