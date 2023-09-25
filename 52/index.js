@@ -32,6 +32,7 @@ for (let char in myString) {
 }
 
 // for of loop
+
 console.log("******For of loop starts here*****");
 people = ["harry", "Rohan", "skillF", "Shubam", "Vikranth"];
 
