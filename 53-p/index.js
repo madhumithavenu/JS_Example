@@ -46,3 +46,16 @@ const data = [
         image: 'https://randomuser.me/api/portraits/men/61.jpg'
     }
 ]
+
+
+// CV Iterator
+function cvIterator(profiles){
+    let nextIndex=0;
+    return {
+        next: function(){
+            return nextIndex<profiles.length ?
+            {value: profiles[nextIndex++], done: false} :
+            {done: true}
+        }
+    };
+}
