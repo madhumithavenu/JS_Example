@@ -1,4 +1,3 @@
-
 // Data is an array of objects which contains information about the candidates
 const data = [
     {
@@ -46,7 +45,6 @@ const data = [
         image: 'https://randomuser.me/api/portraits/men/61.jpg'
     }
 ]
-
 
 // CV Iterator
 function cvIterator(profiles) {
