@@ -31,3 +31,13 @@ for (let char in myString) {
     console.log(myString[char]);
 }
 
+// for of loop
+console.log("******For of loop starts here*****");
+people = ["harry", "Rohan", "skillF", "Shubam", "Vikranth"];
+
+for (let name of people) {
+    console.log(name);
+}
+for (let name of myString) {
+    console.log(name);
+}
