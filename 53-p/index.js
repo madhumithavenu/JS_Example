@@ -28,5 +28,21 @@ const data = [
         image: 'https://randomuser.me/api/portraits/women/55.jpg'
     },
 
-    
+    {
+        name: 'Aishwariya Rai',
+        age: 45,
+        city: 'Mumbai',
+        language: 'Python',
+        framework: 'Flask',
+        image: 'https://randomuser.me/api/portraits/women/57.jpg'
+    },
+
+    {
+        name: 'Rohit Sharma',
+        age: 34,
+        city: 'Jharkhand',
+        language: 'Go',
+        framework: 'Go Framework',
+        image: 'https://randomuser.me/api/portraits/men/61.jpg'
+    }
 ]
