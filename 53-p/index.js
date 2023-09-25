@@ -59,3 +59,17 @@ function cvIterator(profiles){
         }
     };
 }
+
+const candidates = cvIterator(data);
+
+// Button listener for next button
+const next = document.getElementById('next');
+next.addEventListener('click', nextCV);
+
+
+function nextCV(){
+    const currentCandidate = candidates.next().value;
+    let image = document.getElementById('image');
+    let profile = document.getElementById('profile');
+
+}
