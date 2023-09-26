@@ -23,3 +23,24 @@ console.log(myMap.size);
 for (let [key, value] of myMap) {
     console.log(key, value);
 }
+
+// Get only keys
+for (let key of myMap.keys()) {
+    console.log('key is ', key);
+}
+
+// Get only values
+for (let value of myMap.values()) {
+    console.log('Value is ', value);
+}
+
+// We can loop through the map using for each loop
+myMap.forEach((value, key) => {
+    console.log('Key is ', key);
+    console.log('Value is ', value);
+})
+
+// Converting map to an array
+let myArray = Array.from(myMap);
+console.log('Map to array is ', myArray);
+
