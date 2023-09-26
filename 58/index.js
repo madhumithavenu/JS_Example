@@ -35,4 +35,5 @@ for (whiteBox of whiteBoxes) {
         console.log('Drop has been triggered');
         e.target.append(imgBox);
     })
+    
 }
