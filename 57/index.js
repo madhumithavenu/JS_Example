@@ -18,6 +18,7 @@ const fruits = ['Apple', 'Banana', 'Mangoes'];
 console.log(a, b, c);
 
 //Object Destructing
+
 const laptop = {
     model: "HP Pavilion",
     age: "23 years",
