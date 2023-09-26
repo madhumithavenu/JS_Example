@@ -44,3 +44,10 @@ myMap.forEach((value, key) => {
 let myArray = Array.from(myMap);
 console.log('Map to array is ', myArray);
 
+// Converting map keys to an array
+let myKeysArray = Array.from(myMap.keys());
+console.log('Map to keys array is ', myKeysArray);
+
+// Converting map values to an array
+let myValuesArray = Array.from(myMap.values());
+console.log('Map to values array is ', myValuesArray);
