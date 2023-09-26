@@ -26,3 +26,13 @@ console.log('before removal', mySet.has('that2'));
 mySet.delete('that2'); //Remove an element from the set
 
 console.log('after removal', mySet.has('that2'));
+
+//Iterating the set
+// for (let item of mySet) {
+//     console.log('Item is : ', item);
+// }
+
+mySet.forEach((item) => {
+    console.log('Item is : ', item);
+
+})
