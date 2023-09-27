@@ -84,5 +84,11 @@ submit.addEventListener('click', () => {
     else {
         data = document.getElementById('requestJsonText').value;
     }
+
+    // Log all the values in the console for debugging
+    console.log('URL is ', url);
+    console.log('requestType is ', requestType);
+    console.log('contentType is ', contentType);
+    console.log('data is ', data);
 });
 
