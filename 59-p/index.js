@@ -55,6 +55,18 @@ addParam.addEventListener('click', () => {
         })
     }
     addedParamCount++;
+})
 
+// If the user clicks on submit button
+let submit = document.getElementById('submit');
+submit.addEventListener('click', () => {
+    // Show please wait in the response box to request patience from the user
+    // document.getElementById('responseJsonText').value = "Please wait.. Fetching response...";
+    document.getElementById('responsePrism').innerHTML = "Please wait.. Fetching response...";
+
+    // Fetch all the values user has entered
+    let url = document.getElementById("url").value;
+    let requestType = document.querySelector("input[name='requestType']:checked").value;
+    let contentType = document.querySelector("input[name='contentType']:checked").value;
 });
 
