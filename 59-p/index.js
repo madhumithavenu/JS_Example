@@ -22,4 +22,9 @@ paramsRadio.addEventListener('click', () => {
     document.getElementById('parametersBox').style.display = 'block';
 })
 
-
+// If the user clicks on json box, hide the params box
+let jsonRadio = document.getElementById('jsonRadio');
+jsonRadio.addEventListener('click', () => {
+    document.getElementById('requestJsonBox').style.display = 'block';
+    document.getElementById('parametersBox').style.display = 'none';
+})
