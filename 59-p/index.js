@@ -90,5 +90,18 @@ submit.addEventListener('click', () => {
     console.log('requestType is ', requestType);
     console.log('contentType is ', contentType);
     console.log('data is ', data);
+
+    // if the request type is get, invoke fetch api to create a post request
+    if (requestType == 'GET') {
+        fetch(url, {
+            method: 'GET',
+        })
+            .then(response => response.text())
+            .then((text) => {
+                // document.getElementById('responseJsonText').value = text;
+                document.getElementById('responsePrism').innerHTML = text;
+                Prism.highlightAll();
+            });
+    }
 });
 
