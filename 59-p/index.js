@@ -118,9 +118,6 @@ submit.addEventListener('click', () => {
                 document.getElementById('responsePrism').innerHTML = text;
                 Prism.highlightAll();
             });
-
     }
-
-
 });
 
