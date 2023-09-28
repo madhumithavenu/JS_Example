@@ -1,4 +1,5 @@
 let screen = document.getElementById('screen');
+
 buttons = document.querySelectorAll('button');
 let screenValue = '';
 
@@ -8,7 +9,7 @@ for (item of buttons) {
         console.log('Button text is ', buttonText);
         if (buttonText == 'X') {
             buttonText = '*';
-            screenValue += buttonText;
+            screenValue += buttonText
             screen.value = screenValue;
         }
         else if (buttonText == 'C') {
